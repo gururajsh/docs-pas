@@ -282,7 +282,7 @@ v8](../cf-cli/v8.html).
         </details>
       </td>
     </tr>
-    <tr><td>garden-runc</td><td>1.53.0</td><td></td></tr>
+    <tr><td>garden-runc</td><td>1.53.0</td><td><a href="https://github.com/cloudfoundry/garden-runc-release/releases/tag/v1.53.0">1.53.0</a></td></tr>
     <tr><td>go-offline-buildpack</td><td>1.10.21</td>
       <td>
         <details>
@@ -320,7 +320,7 @@ v8](../cf-cli/v8.html).
         </details>
       </td>
     </tr>
-    <tr><td>java-offline-buildpack</td><td>4.70.0</td><td></td></tr>
+    <tr><td>java-offline-buildpack</td><td>4.70.0</td><td><a href="https://github.com/pivotal-cf/java-buildpack/releases/tag/v4.72.0">Java Buildpack v4.72.0</a></td></tr>
     <tr><td>java-native-image-cnb-buildpack</td><td>0.11.20</td>
       <td>
         <details>
@@ -1330,9 +1330,9 @@ v8](../cf-cli/v8.html).
         </details>
       </td>
     </tr>
-    <tr><td>garden-runc</td><td>1.53.0</td><td><a href="https://github.com/cloudfoundry/garden-runc-release/releases/tag/v1.53.0">1.53.0</a></td></tr>
+    <tr><td>garden-runc</td><td>1.53.0</td><td></td></tr>
     <tr><td>go-offline-buildpack</td><td>1.10.19</td><td></td></tr>
-    <tr><td>java-offline-buildpack</td><td>4.70.0</td><td><a href="https://github.com/pivotal-cf/java-buildpack/releases/tag/v4.72.0">Java Buildpack v4.72.0</a></td></tr>
+    <tr><td>java-offline-buildpack</td><td>4.70.0</td><td></td></tr>
     <tr><td>java-native-image-cnb-buildpack</td><td>0.11.18</td>
       <td>
         <details>
@@ -5447,7 +5447,7 @@ See also the TAS for VMs 5.0 [release notes](https://docs.vmware.com/en/VMware-T
 
 The behavior of any custom integration using Prometheus to scrape the Metrics Agent will change. The Metrics Agent is protected by mutual TLS, and for access, it would require using a certificate issued by TAS. We do not know of any products or integrations that use this agent.
 
-You will see this change if you have built a custom integration that scrapes all VMs usingPprometheus on port 14726.
+You will see this change if you have built a custom integration that scrapes all VMs using Prometheus on port 14726.
 See the TAS for VMs 5.0 [release notes](https://docs.vmware.com/en/VMware-Tanzu-Application-Service/5.0/tas-for-vms/runtime-rn.html) for more information.
 
 The Metrics Agent was designed as a way for Healthwatch and other components to retrieve metrics without using the Loggregator Firehose. No components ended up adopting it, and with the introduction of the OpenTelemetry Collector, there are now much more flexible options for egressing metrics. For this reason, we are slating it for removal rather than driving adoption towards it.
